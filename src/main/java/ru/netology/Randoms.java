@@ -2,9 +2,8 @@ package ru.netology;
 
 import java.util.Iterator;
 import java.util.Random;
-import java.util.Spliterator;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.function.Consumer;
+
 
 public class Randoms implements Iterable<Integer> {
     private final Random random;
@@ -27,7 +26,7 @@ public class Randoms implements Iterable<Integer> {
 
             @Override
             public Integer next() {
-                return random.nextInt(min, max+1);
+                return random.nextInt(min, max + 1);
             }
         };
     }
